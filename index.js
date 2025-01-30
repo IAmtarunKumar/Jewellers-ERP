@@ -119,6 +119,10 @@ app.use("/invoiceUpload", invoiceUploadRoutes);
 app.use("/repairInvoiceUpload", repairInvoiceUploadRoutes)
 app.use("/stringSecurity", stringSecurityRoutes)
 //
+
+app.get("/" , (req,res)=>{
+  res.send("Welcome to our api")
+})
 //
 app.post("/uploadAllImages", upload.array("productImage", 50), async (req, res) => { uploadAllImages(req, res, firstApp) })
 
