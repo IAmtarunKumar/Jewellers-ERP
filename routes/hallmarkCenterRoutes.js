@@ -5,7 +5,7 @@ const editHallmarkCenter = require("../controllers/crmControllers/editApis/editH
 
 const router = express.Router();
 
-// router.get("/", getAllProducts);  //veer code
+router.get("/", getAllProducts); 
 router.post("/edit", editHallmarkCenter)
 router.get('/fetch', async (req, res) => {
     try {
