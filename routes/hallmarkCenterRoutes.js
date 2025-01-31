@@ -1,9 +1,12 @@
 const express = require("express");
 const { HallMarkCenter } = require("../models/hallmarkCenter");
 const editHallmarkCenter = require("../controllers/crmControllers/editApis/editHallmarkCenter");
-
+const getAllProducts = require("../controllers/crmControllers/getAllProducts")
 
 const router = express.Router();
+
+
+
 
 router.get("/", getAllProducts); 
 router.post("/edit", editHallmarkCenter)
