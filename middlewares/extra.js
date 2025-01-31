@@ -21,7 +21,7 @@ function MiddleWares(app) {
   // app.use(cors());
   app.use(
     cors({
-      origin: ["http://localhost:3000", "http://localhost:3001", "https://crm-dashboard-git-aestrajewellers-nexgenauth.vercel.app", "https://crm-dashboard-o1sx.vercel.app", "https://aestra1.ocpl.tech", "https://crm-dashboard-o1sx-bzny3yneb-nexgenauth.vercel.app", "https://aestra-jewellers.vercel.app"],
+      origin: ["http://localhost:3000", "http://localhost:3001", "https://jewellers-erp-fe.vercel.app" ],
       credentials: true,
       exposedHeaders: ['x-auth-token'],
       allowedHeaders: ['Content-Type', 'x-auth-token']
